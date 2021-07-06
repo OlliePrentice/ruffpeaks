@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Adventure Hollow';
+    src: url('/fonts/AdventureHollow.eot');
+    src: url('/fonts/AdventureHollow.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/AdventureHollow.woff2') format('woff2'),
+        url('/fonts/AdventureHollow.woff') format('woff'),
+        url('/fonts/AdventureHollow.ttf') format('truetype'),
+        url('/fonts/AdventureHollow.svg#AdventureHollow') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adventure';
+    src: url('/fonts/Adventure.eot');
+    src: url('/fonts/Adventure.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Adventure.woff2') format('woff2'),
+        url('/fonts/Adventure.woff') format('woff'),
+        url('/fonts/Adventure.ttf') format('truetype'),
+        url('/fonts/Adventure.svg#Adventure') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,ol {
+    @apply mb-6;
+}
+
+li {
+    @apply mb-2;
+}
+
+p, li {
+    @apply text-base leading-relaxed;
+}
+
+.l-copy {
+    p,li {
+        @apply text-lg leading-loose;
+    }
+}
+
+h1, h2, h3 {
+    @apply font-display;
+}
+
+h1 {
+    @apply text-6xl;
+}
+
+
+h2 {
+    @apply text-5xl;
+}
+
+
+h3 {
+    @apply text-4xl;
+}
+
+h4 {
+    @apply text-3xl;
+}
+
+h5 {
+    @apply text-2xl;
+}
+
+h6 {
+    @apply text-xl;
+}
+
+ul,ol {
+    &:not(.remove-bullets) {
+        @apply pl-5;
+    }
+}
+
+ol {
+    &:not(.remove-bullets) {
+        list-style: decimal;
+    }
+}
+
+ul {
+    &:not(.remove-bullets) {
+        list-style: disc;
+    }
+}

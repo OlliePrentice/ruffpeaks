@@ -1,0 +1,22 @@
+.remove-underlines {
+    a {
+        @apply no-underline;
+    }
+}
+
+.remove-bullets {
+    ul,ol {
+        padding: 0;
+        list-style: none;
+    }
+}
+
+.remove-last-margin {
+    > * {
+        @apply last:mb-0;
+    }
+}
+
+.h-screen-header {
+    min-height: calc(100vh - 76px);
+}
