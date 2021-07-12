@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from "../components/structures/header"
 import Footer from "../components/structures/footer"
+import Layout from "../components/structures/layout"
 import PageHeader from '../components/blocks/page-header'
 import Services from '../components/blocks/services'
 
@@ -13,7 +14,7 @@ export default function AllServices() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <main>
+      <Layout>
         <PageHeader 
             title="Services"
             image="/pexels-johann-2002056.jpg"
@@ -22,7 +23,7 @@ export default function AllServices() {
         <Services
           animation={true}
         />
-      </main>
+      </Layout>
       <Footer/>
     </>
   )

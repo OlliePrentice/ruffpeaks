@@ -71,10 +71,10 @@ export default function Form({padding, captcha}) {
 
 
     return (
-        <Block padding={padding || undefined}>
+        <Block classes={padding || undefined}>
                 <div className="container mx-auto">
                     <div className="max-w-2xl mx-auto">
-                        <h2 className="text-5xl text-center mb-12">Contact Us</h2>
+                        <h2 className="text-5xl text-center mb-12">Get in touch</h2>
                         <div>
                             {errors && <ul className="remove-bullets text-red-500 font-medium text-sm text-center">
                                 {errors.map((error, index) => {
@@ -85,18 +85,18 @@ export default function Form({padding, captcha}) {
                             <form method="post">
                                 <ul className="flex flex-wrap -mx-2 mb-0 remove-bullets">
                                     <li className="px-2 mb-6 w-full">
-                                        <label htmlFor="contactName">Name<sup className="text-green-400">*</sup></label>
+                                        <label htmlFor="contactName">Name<sup className="text-primary-400">*</sup></label>
                                         <input id="contactName" type="text" name="name" required placeholder="Name" onChange={(e)=>{setName(e.target.value)}} />
                                     </li>
-                                    <li className="px-2  mb-6  w-1/2">
-                                        <label htmlFor="contactEmail">Email Address<sup className="text-green-400">*</sup></label>
+                                    <li className="px-2 mb-6 w-full sm:w-1/2">
+                                        <label htmlFor="contactEmail">Email Address<sup className="text-primary-400">*</sup></label>
                                         <input id="contactEmail" type="email" name="email" required placeholder="your@email.com" onChange={(e)=>{setEmail(e.target.value)}} />
                                     </li>
-                                    <li className="px-2  mb-6  w-1/2">
+                                    <li className="px-2 mb-6 w-full sm:w-1/2">
                                         <label htmlFor="contactPhone">Phone</label>
                                         <input id="contactPhone" type="text" name="phone" placeholder="01234 567891" onChange={(e)=>{setPhone(e.target.value)}} />
                                     </li>
-                                    <li className="px-2  mb-6  w-full">
+                                    <li className="px-2 mb-6 w-full">
                                         <label htmlFor="contactService">Service</label>
                                         <select id="contactService" name="service" defaultValue="" onChange={(e)=>{setService(e.target.value)}} >
                                             <option value="" disabled>Choose service</option>
@@ -125,7 +125,7 @@ export default function Form({padding, captcha}) {
 
                             {submitted &&
                             <div className="text-center">
-                                <span className="text-green-500 font-bold">Your message has been sent!</span>
+                                <span className="text-primary-500 font-bold">Your message has been sent!</span>
                             </div>}
                         </div>
                     </div>

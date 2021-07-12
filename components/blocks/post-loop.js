@@ -6,16 +6,16 @@ export default function PostLoop() {
         <Block>
             <div className="container mx-auto">
                 <div className="flex flex-wrap -mx-4">
-                    <div className="px-4 w-1/4 mb-8">
+                    <div className="px-4 w-full sm:w-1/2 lg:w-1/4 mb-8">
                         <CardPost/>
                     </div>
-                    <div className="px-4 w-1/4 mb-8">
+                    <div className="px-4 w-full sm:w-1/2 lg:w-1/4 mb-8">
                         <CardPost/>
                     </div>
-                    <div className="px-4 w-1/4 mb-8">
+                    <div className="px-4 w-full sm:w-1/2 lg:w-1/4 mb-8">
                         <CardPost/>
                     </div>
-                    <div className="px-4 w-1/4 mb-8">
+                    <div className="px-4 w-full sm:w-1/2 lg:w-1/4 mb-8">
                         <CardPost/>
                     </div>
          

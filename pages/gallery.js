@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from "../components/structures/header"
 import Footer from "../components/structures/footer"
+import Layout from "../components/structures/layout"
 import PageHeader from '../components/blocks/page-header'
 import Gallery from '../components/blocks/gallery'
 
@@ -13,14 +14,14 @@ export default function AllGallery() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <main>
+      <Layout>
         <PageHeader 
             title="Gallery"
             image="/pexels-marcin-jozwiak-2739505.jpg"
           
         />
         <Gallery />
-      </main>
+      </Layout>
       <Footer/>
     </>
   )

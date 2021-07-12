@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from "../components/structures/header"
 import Footer from "../components/structures/footer"
+import Layout from "../components/structures/layout"
 import PageHeader from '../components/blocks/page-header'
 import ContentImage from '../components/blocks/content-image'
 import BackgroundCta from '../components/blocks/background-cta'
@@ -14,7 +15,7 @@ export default function Team() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <main>
+      <Layout>
         <PageHeader 
             title="Team"
             image="/pexels-marcin-jozwiak-2739505.jpg"
@@ -31,13 +32,13 @@ export default function Team() {
          <ContentImage 
           image="/pexels-dariusz-grosa-2043021.jpg"
           heading="Ollie"
-          copy="<p>Ollie has grown up with dogs from SWpaniels to Manchester terriers and understands the complex behaviours each dog can have.</p>
+          copy="<p>Ollie has grown up with dogs including Spaniels and many breeds of terrier and understands the complex behaviours each dog can have.</p>
           <p>Ollie's favourite breed of dog is the Jack Russell Terrier.</p>"
           link={{url: '/', title: 'Book Ollie'}}
           reverse={true}
         />
         <BackgroundCta />
-      </main>
+      </Layout>
       <Footer/>
     </>
   )

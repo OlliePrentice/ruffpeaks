@@ -6,7 +6,7 @@ import * as dogAnimation from '../../public/dog.json'
 
 export default function Services({animation}) {
 
-    const panelClasses = 'px-12 py-16 h-full flex flex-col rounded-lg text-center shadow shadow-lg bg-white';
+    const panelClasses = 'px-4 sm:px-8 md:px-12 py-12 sm:py-16 h-full flex flex-col rounded-lg text-center shadow shadow-lg bg-white border-2 border-primary-400';
 
     return (
         <Block>
@@ -17,8 +17,8 @@ export default function Services({animation}) {
                 <div>
                     <h2 className="text-center mb-10">Our Services</h2>
                 </div>
-                <div className="flex flex-wrap">
-                    <div className="w-1/4">
+                <div className="flex flex-wrap justify-center">
+                    <div className="w-full max-w-md">
                         <div className={panelClasses}>
                             <div className="flex-1">
                                 <h4 className="mb-8 font-bold text-sm uppercase">Dog Walking</h4>
@@ -33,12 +33,12 @@ export default function Services({animation}) {
                                 </ul>
                             </div>
                             <div>
-                                <Button url="/" style="tertiary" extraClasses="w-full">Enquire Now</Button>
+                                <Button url="/contact" style="tertiary" extraClasses="w-full">Enquire Now</Button>
                             </div>
                         </div>
                     </div>
                     
-                    <div className="w-1/4">
+                    {/* <div className="w-1/4">
                         <div className={panelClasses}>
                             <div className="flex-1">
                                 <h4 className="mb-8 font-bold text-sm uppercase">Dog Sitting</h4>
@@ -93,7 +93,7 @@ export default function Services({animation}) {
                                 <Button url="/" style="tertiary"  extraClasses="w-full">Enquire Now</Button>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </Block>

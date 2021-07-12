@@ -1,9 +1,16 @@
 @tailwind base;
 @tailwind components;
 
+// Core
+@import "./colours";
+@import "./variables";
 @import "./typography";
 @import "./utilities";
 @import "./form";
 @import "./theme";
+
+// Components
+@import "./components/menu/burger";
+@import "./components/menu/header-nav-mobile";
 
 @tailwind utilities;

@@ -30,13 +30,8 @@ export default async function (req, res) {
         throw new Error(`YOU ARE NOT A HUMAN.`)
     }
 
-    // The code below will run only after the reCAPTCHA is succesfully validated.
-    console.log("SUCCESS!")
-
 
     const sgMail = require('@sendgrid/mail');
-
-
 
     sgMail.setApiKey(process.env.SENDGRID_API_KEY)
     const msg = {

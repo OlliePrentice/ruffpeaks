@@ -29,9 +29,6 @@ export default function Footer() {
                                     <li className="mb-1">
                                         <a href="/team">Team</a>
                                     </li>
-                                    <li className="mb-1">
-                                        <a href="/stories">Stories</a>
-                                    </li>
                                 </ul>
                             </li>
                             <li className="w-full w-1/2 md:w-1/4 px-4 mb-4">
@@ -39,9 +36,6 @@ export default function Footer() {
                                 <ul>
                                     <li className="mb-1">
                                         <a href="/faq">FAQ</a>
-                                    </li>
-                                    <li className="mb-1">
-                                        <a href="/covid-19">COVID-19</a>
                                     </li>
                                     <li className="mb-1">
                                         <a href="/contact">Contact</a>
@@ -55,7 +49,7 @@ export default function Footer() {
                                         <a href="/privacy-policy">Privacy Policy</a>
                                     </li>
                                     <li className="mb-1">
-                                        <a href="/terms-conditions">Terms &amp; Conditions</a>
+                                        <a href="/cookie-policy">Cookie Policy</a>
                                     </li>
                                 </ul>
                             </li>
@@ -63,22 +57,22 @@ export default function Footer() {
                                 <a href="#" className="font-bold uppercase text-sm mb-4 inline-block tracking-wide">Social</a>
                                 <ul className="font-zero -mx-3">
                                     <li className="inline-block px-3">
-                                        <a href="/" className="hover:text-green-500">
+                                        <a href="/" className="hover:text-primary-500">
                                             <FontAwesomeIcon icon={['fab', 'facebook-f']}/>
                                         </a>
                                     </li>
                                     <li className="inline-block px-3">
-                                        <a href="/" className="hover:text-green-500">
+                                        <a href="/" className="hover:text-primary-500">
                                             <FontAwesomeIcon icon={['fab', 'twitter']}/>
                                         </a>
                                     </li>
                                     <li className="inline-block px-3">
-                                        <a href="/" className="hover:text-green-500">
+                                        <a href="/" className="hover:text-primary-500">
                                             <FontAwesomeIcon icon={['fab', 'instagram']}/>
                                         </a>
                                     </li>
                                     <li className="inline-block px-3">
-                                        <a href="/" className="hover:text-green-500">
+                                        <a href="/" className="hover:text-primary-500">
                                             <FontAwesomeIcon icon={['fab', 'youtube']}/>
                                         </a>
                                     </li>

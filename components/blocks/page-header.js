@@ -3,9 +3,9 @@ import Image from 'next/image'
 
 export default function PageHeader({title, image}) {
     return (
-        <Block padding={false}>
-            <div className="relative py-40 flex items-center">
-                <div className="relative min-h-full w-full bg-black bg-opacity-50 absolute z-10 top-0 left-0 py-40"></div>
+        <Block classes={false}>
+            <div className="relative py-20 md:py-40 flex items-center">
+                <div className="relative min-h-full w-full bg-black bg-opacity-50 absolute z-10 top-0 left-0"></div>
                 <Image
                     alt="Dog walk in forest"
                     src={image}
@@ -14,7 +14,7 @@ export default function PageHeader({title, image}) {
                 />
 
                 <div className="container mx-auto relative z-10 text-center">
-                    <h1 className="text-white text-8xl">{title}</h1>
+                    <h1 className="text-white text-5xl sm:text-6xl lg:text-8xl">{title}</h1>
                 </div>
             </div>
         </Block>

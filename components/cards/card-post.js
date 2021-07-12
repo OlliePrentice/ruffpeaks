@@ -25,7 +25,7 @@ export default function CardPost() {
                     <div>
                         <p>Lorem ipsum dolor sit amet, vis cu platonem disputationi, erat reque suscipit at pri. Mea an nobis impedit salutatus. </p>
                     </div>
-                    <span className="font-bold hover:text-green-500 transition group-hover:text-green-500">Read more</span>
+                    <span className="font-bold hover:text-primary-500 transition group-hover:text-primary-500">Read more</span>
                 </div>
             </a>
         </div>

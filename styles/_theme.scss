@@ -1,5 +1,5 @@
 body {
-    padding-top: 76px;
+    padding-top: $body-padding;
 
     @apply 
         font-body
@@ -7,7 +7,7 @@ body {
 }
 
 a {
-    @apply transition underline hover:text-green-500;
+    @apply transition underline hover:text-primary-500;
 }
 
 .icon-bullets {
@@ -20,7 +20,7 @@ a {
             position: relative;
             left: -1em;
             margin-left: -1em;
-            @apply text-green-500;
+            @apply text-primary-500;
         }
     }
 }

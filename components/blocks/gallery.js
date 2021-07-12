@@ -3,12 +3,19 @@ import Image from 'next/image'
 import Masonry from 'react-masonry-css'
 
 export default function Gallery() {
+
+    const breakpointColumns = {
+        default: 3,
+        768: 2,
+        475: 1
+    };
+
     return (
         <Block>
             <div className="container mx-auto text-zero">
 
                 <Masonry
-                    breakpointCols={3}
+                    breakpointCols={breakpointColumns}
                     className="masonry-grid"
                     columnClassName="masonry-grid_column">
                                           

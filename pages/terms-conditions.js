@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from "../components/structures/header"
 import Footer from "../components/structures/footer"
+import Layout from "../components/structures/layout"
 import TextContent from '../components/blocks/text-content'
 
 export default function TermsConditions() {
@@ -12,7 +13,7 @@ export default function TermsConditions() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <main>
+      <Layout>
         <TextContent
             heading="Terms &amp; Conditions"
             copy="
@@ -45,7 +46,7 @@ export default function TermsConditions() {
 <p>Est meis eligendi partiendo no, ut nullam deleniti eum. Ius nulla animal mnesarchum at, ei oratio recusabo eos. An usu recusabo pertinax assueverit. Nec ex sonet latine quaestio, no partem verear impedit sea.</p>
             "
         />
-      </main>
+      </Layout>
       <Footer/>
     </>
   )

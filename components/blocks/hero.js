@@ -1,16 +1,24 @@
-import Block from './block'
-import Image from 'next/image'
+import Block from './block';
+import Image from 'next/image';
 
 import SwiperCore, { EffectFade, Autoplay } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 SwiperCore.use([EffectFade, Autoplay]);
 
 export default function Hero() {
+
+    function scrollClickHandler(e) {
+        e.currentTarget.closest('section').nextSibling.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
+        });
+    }
+
     return (
-        <Block blockId="hero" padding="pb-20">
+        <Block blockId="hero" classes="pb-0 lg:pb-20">
             <div className="relative h-screen-header select-none">
-                <div className="min-h-full w-full bg-black bg-opacity-50 absolute z-10 top-0 left-0 py-40"></div>
+                <div className="min-h-full w-full bg-black bg-opacity-50 absolute z-10 top-0 left-0"></div>
                     
                
                     <Swiper
@@ -55,7 +63,7 @@ export default function Hero() {
             
                     </Swiper>
                 
-                <div className="absolute top-1/2 left-1/2 z-20 transform -translate-x-1/2 -translate-y-1/2 text-center max-w-xl px-4">
+                <div className="absolute top-1/2 left-1/2 z-20 transform -translate-x-1/2 -translate-y-1/2 text-center w-full max-w-xs sm:max-w-sm lg:max-w-xl px-4">
                     <Image
                         alt="White Logo"
                         src="/ruffpeaks-white-no-text.svg"
@@ -65,8 +73,8 @@ export default function Hero() {
                     />
 
                     <div className="pt-2.5 text-white">
-                        <h1 className="text-7xl mb-0">Dog walking around Glossop</h1>
-                        <div className="flex flex-wrap justify-center cursor-pointer absolute -bottom-40 pt-20 left-1/2 transform -translate-x-1/2">
+                        <h1 className="text-4xl sm:text-5xl lg:text-7xl mb-0">Dog walking around Glossop</h1>
+                        <div className="flex flex-wrap justify-center cursor-pointer absolute -bottom-40 pt-20 left-1/2 transform -translate-x-1/2 hover:opacity-70 transition" onClick={(e) => {scrollClickHandler(e)}}>
                             <p className="w-full mb-2">Find out more</p>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z" />

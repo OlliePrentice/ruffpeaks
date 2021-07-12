@@ -16,7 +16,7 @@ export default function BackgroundCta() {
                     />
                     <div className="relative z-10 text-white text-center">
                         <h2>Book a walk</h2>
-                        <Button url="/" style="secondary">Contact now</Button>
+                        <Button url="/contact" style="secondary">Contact now</Button>
                     </div>
                 </div>
 

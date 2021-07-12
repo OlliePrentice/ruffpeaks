@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from "../components/structures/header"
 import Footer from "../components/structures/footer"
+import Layout from "../components/structures/layout"
 import PageHeader from '../components/blocks/page-header'
 import PostLoop from '../components/blocks/post-loop'
 import BannerCta from '../components/blocks/banner-cta'
@@ -14,7 +15,7 @@ export default function Stories() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <main>
+      <Layout>
         <PageHeader 
             title="Stories"
             image="/pexels-marcin-jozwiak-2739505.jpg"
@@ -22,7 +23,7 @@ export default function Stories() {
         />
         <PostLoop />
         <BannerCta padding="" />
-      </main>
+      </Layout>
       <Footer/>
     </>
   )

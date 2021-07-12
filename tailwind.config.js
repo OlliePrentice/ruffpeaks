@@ -1,3 +1,6 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
@@ -17,7 +20,19 @@ module.exports = {
       },
       minHeight: {
         'inherit': 'inherit'
+      },
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        black: colors.black,
+        white: colors.white,
+        primary: colors.green,
+        gray: colors.coolGray
       }
+    },
+    screens: {
+      'xs': '475px',
+      ...defaultTheme.screens,
     },
     container: {
       padding: {
