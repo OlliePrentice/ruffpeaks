@@ -1,8 +1,10 @@
 import Image from 'next/image'
+import Script from 'next/script'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Footer() {
     return (
+        <>
         <footer className="main-footer bg-gray-100 z-50 remove-underlines remove-bullets">
             <div className="container mx-auto">
                 <div className="py-10">
@@ -98,5 +100,33 @@ export default function Footer() {
             </div>
 
         </footer>
+        <div id="fb-root"></div>
+
+        <div id="fb-customer-chat" className="fb-customerchat">
+        </div>
+
+        <Script>
+            {`
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "104181658543041");
+            chatbox.setAttribute("attribution", "biz_inbox");
+
+            window.fbAsyncInit = function() {
+                FB.init({
+                xfbml            : true,
+                version          : 'v11.0'
+                });
+            };
+
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+            `}
+        </Script>
+        </>
     );
 }
