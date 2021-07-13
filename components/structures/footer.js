@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import MessengerCustomerChat from 'react-messenger-customer-chat'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Footer() {
@@ -99,8 +98,6 @@ export default function Footer() {
                     </div>
                 </div>
             </footer>
-
-            {typeof window !== "undefiend" && <MessengerCustomerChat pageId="104181658543041" appId="" />}
         </div>
     );
 }
