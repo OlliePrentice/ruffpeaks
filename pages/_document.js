@@ -13,11 +13,6 @@ class MyDocument extends Document {
         <Head />
         <body>
           <Main />
-
-          <div id="fb-root"></div>
-          <div id="fb-customer-chat" class="fb-customerchat" data-page_id="104181658543041"></div>
-
-          <NextScript />
           <script dangerouslySetInnerHTML={{
                         __html: `window.fbAsyncInit = function() {
                             FB.init({
@@ -34,6 +29,10 @@ class MyDocument extends Document {
                             fjs.parentNode.insertBefore(js, fjs);
                            }(document, 'script', 'facebook-jssdk'))`
                     }} />
+          <div id="fb-root"></div>
+          <div id="fb-customer-chat" class="fb-customerchat" data-page_id="104181658543041"></div>
+
+          <NextScript />
         </body>
       </Html>
     )
