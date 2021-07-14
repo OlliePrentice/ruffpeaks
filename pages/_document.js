@@ -33,7 +33,7 @@ class MyDocument extends Document {
                            }(document, 'script', 'facebook-jssdk'))`
                     }} />
           <div id="fb-root"></div>
-          <div id="fb-customer-chat" class="fb-customerchat" attribution="biz_inbox" data-page_id="104181658543041"></div>
+          <div id="fb-customer-chat" className="fb-customerchat" attribution="biz_inbox" data-page_id="104181658543041"></div>
 
         </body>
       </Html>

@@ -28,7 +28,7 @@ export default function Services({animation}) {
                                 <ul className="text-left remove-bullets icon-bullets mb-10">
                                     <li><FontAwesomeIcon icon={['far', 'check-circle']}/>A 1 hour walk</li>
                                     <li><FontAwesomeIcon icon={['far', 'check-circle']}/>Multiple walking locations to stop your dog getting bored</li>
-                                    <li><FontAwesomeIcon icon={['far', 'check-circle']}/>A Gentle wash and dry if your pooch dirty from the walk</li>
+                                    <li><FontAwesomeIcon icon={['far', 'check-circle']}/>A gentle wash and dry if your pooch dirty from the walk</li>
                                     <li><FontAwesomeIcon icon={['far', 'check-circle']}/>Second Dog for £8</li>
                                 </ul>
                             </div>
